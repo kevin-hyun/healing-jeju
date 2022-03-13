@@ -26,14 +26,11 @@ const Hero = () => {
         <VideoBg autoPlay loop muted src={video} type="video/mp4" />
       </HeroBg>
       <HeroContent>
-        <HeroH1>Virtual Banking Made Easy</HeroH1>
+        <HeroH1>어르신과 가족 모두를 위한 선택</HeroH1>
 
-        <HeroP>
-          Sign up fro a new account today and receive $250 in credit towrard
-          your next payment
-        </HeroP>
+        <HeroP>방문요양을 쉽고 간편하게</HeroP>
         <HeroBtnWrapper>
-          <Button
+          {/* <Button
             to="signup"
             onMouseEnter={onHover}
             onMouseLeave={onHover}
@@ -45,8 +42,8 @@ const Hero = () => {
             exact="true"
             offset={-80}
           >
-            Get Started {hover ? <ArrowForward /> : <ArrowRight />}
-          </Button>
+            상담신청 {hover ? <ArrowForward /> : <ArrowRight />}
+          </Button> */}
         </HeroBtnWrapper>
       </HeroContent>
     </HeroContainer>

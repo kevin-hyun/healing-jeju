@@ -37,7 +37,7 @@ const Navbar = ({ toggle }) => {
       <Nav scrollNav={scrollNav}>
         <NavbarContainer>
           <NavLogo to="/" onClick={togglehome}>
-            dolla
+            힐링제주 노인복지센터
           </NavLogo>
           <MobileIcon onClick={toggle}>
             <FaBars />
@@ -52,19 +52,7 @@ const Navbar = ({ toggle }) => {
                 exact="true"
                 offset={-80}
               >
-                About
-              </NavLinks>
-            </NavItem>
-            <NavItem>
-              <NavLinks
-                to="discover"
-                smooth={true}
-                duration={500}
-                spy={true}
-                exact="true"
-                offset={-80}
-              >
-                Discover
+                방문요양이란?
               </NavLinks>
             </NavItem>
             <NavItem>
@@ -76,34 +64,22 @@ const Navbar = ({ toggle }) => {
                 exact="true"
                 offset={-80}
               >
-                Services
+                제공서비스
               </NavLinks>
             </NavItem>
             <NavItem>
               <NavLinks
-                to="signUp"
+                to="introduce"
                 smooth={true}
                 duration={500}
                 spy={true}
                 exact="true"
                 offset={-80}
               >
-                Sign Up
+                센터 소개
               </NavLinks>
             </NavItem>
           </NavMenu>
-          <NavBtn>
-            <NavBtnLink
-              to="/signin"
-              smooth={true}
-              duration={500}
-              spy={true}
-              exact="true"
-              offset={-80}
-            >
-              Sign In
-            </NavBtnLink>
-          </NavBtn>
         </NavbarContainer>
       </Nav>
     </>

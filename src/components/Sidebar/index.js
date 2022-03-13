@@ -13,26 +13,23 @@ import {
 const Sidebar = ({ isOpen, toggle }) => {
   return (
     <SidebarContainer isOpen={isOpen} onClick={toggle}>
-      <Icon onClikck={toggle}>
+      <Icon onClick={toggle}>
         <CloseIcon />
       </Icon>
       <SidebarWrapper>
         <SidebarMenu>
           <SidebarLink to="about" onClick={toggle}>
-            About
-          </SidebarLink>
-          <SidebarLink to="discover" onClick={toggle}>
-            Discover
+            방문요양이란?
           </SidebarLink>
           <SidebarLink to="services" onClick={toggle}>
-            services
+            제공서비스
           </SidebarLink>
-          <SidebarLink to="signup" onClick={toggle}>
-            Sign up
+          <SidebarLink to="introduce" onClick={toggle}>
+            센터소개
           </SidebarLink>
         </SidebarMenu>
         <SideBtnWrap>
-          <SidebarRoute to="/signin"> Sign In </SidebarRoute>
+          <SidebarRoute to="/signin"> 상담 신청 </SidebarRoute>
         </SideBtnWrap>
       </SidebarWrapper>
     </SidebarContainer>

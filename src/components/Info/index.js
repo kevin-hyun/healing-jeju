@@ -29,6 +29,7 @@ const Info = ({
   alt,
   primary,
   dark,
+  buttonLink,
 }) => {
   return (
     <>
@@ -41,13 +42,13 @@ const Info = ({
                 <Heading lightText={lightText}>{headline}</Heading>
                 <Subtitle darkText={darkText}>{description}</Subtitle>
                 <BtnWrap>
-                  <Button
-                    to="home"
+                  {/* <Button
+                    onClick={() => window.open({ buttonLink }, "_blank")}
                     primary={primary ? 1 : 0}
                     dark={dark ? 1 : 0}
                   >
                     {buttonLabel}
-                  </Button>
+                  </Button> */}
                 </BtnWrap>
               </TextWrapper>
             </Column1>

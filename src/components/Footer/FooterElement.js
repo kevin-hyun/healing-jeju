@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 
 export const FooterContainer = styled.footer`
   background-color: #101522;
+  display: flex;
+  flex-direction: column;
 `;
 
 export const FooterWrap = styled.div`
@@ -50,7 +52,7 @@ export const FooterLinkItems = styled.div`
 `;
 
 export const FooterLinkTitle = styled.h1`
-  font-size: 14px;
+  font-size: 25px;
   margin-bottom: 16px;
 `;
 
@@ -61,7 +63,7 @@ export const FooterLink = styled(Link)`
   font-size: 14px;
 
   &:hover {
-    color: #01bf71;
+    color: #ffa07a;
     transition: 0.3s ease-out;
   }
 `;
@@ -106,4 +108,20 @@ export const SocialIcons = styled.div`
 export const SocialIconLink = styled.a`
   color: #fff;
   font-size: 24px;
+`;
+
+export const LogoCopyRight = styled.a`
+  text-decoration: none;
+`;
+
+export const ContactPhone = styled.div`
+  color: #fff;
+  margin-top: 5px;
+  margin-bottom: 5px;
+`;
+
+export const ContactFax = styled.div`
+  color: #fff;
+  margin-top: 5px;
+  margin-bottom: 5px;
 `;

@@ -1,5 +1,11 @@
 import React from "react";
-import { FaInstagram, FaTwitter, FaYoutube, FaFacebook } from "react-icons/fa";
+import {
+  FaInstagram,
+  FaTwitter,
+  FaYoutube,
+  FaFacebook,
+  FaPhoneAlt,
+} from "react-icons/fa";
 import {
   FooterContainer,
   FooterWrap,
@@ -13,38 +19,31 @@ import {
   SocialMediaWrap,
   SocialLogo,
   SocialIcons,
+  LogoCopyRight,
+  ContactPhone,
+  ContactFax,
 } from "./FooterElement";
 
 const Footer = () => {
   return (
     <FooterContainer>
-      <FooterWrap>
-        <FooterLinksWrapper>
-          <FooterLinkItems>
-            <FooterLinkTitle>Column1 </FooterLinkTitle>
-            <FooterLink to="signin">About us</FooterLink>
-            <FooterLink to="signin">How it works</FooterLink>
-            <FooterLink to="signin">testimonails</FooterLink>
-            <FooterLink to="signin">About us</FooterLink>
-          </FooterLinkItems>
-        </FooterLinksWrapper>
-        <FooterLinksWrapper>
-          <FooterLinkItems>
-            <FooterLinkTitle>Column2 </FooterLinkTitle>
-            <FooterLink to="signin">About us</FooterLink>
-            <FooterLink to="signin">How it works</FooterLink>
-            <FooterLink to="signin">testimonails</FooterLink>
-            <FooterLink to="signin">About us</FooterLink>
-          </FooterLinkItems>
-        </FooterLinksWrapper>
-      </FooterWrap>
       <SocialMedia>
         <SocialMediaWrap>
-          <SocialLogo to="/">dolla</SocialLogo>
+          <SocialLogo to="/">힐링제주 복지센터</SocialLogo>
+          <ContactPhone>
+            <FaPhoneAlt />: 064-757-3053
+          </ContactPhone>
+          <ContactFax>fax : 064-757-3052</ContactFax>
           <WedsiteRights>
-            dolla {new Date().getFullYear()} All rights reserved.
+            힐링제주 복지센터 {new Date().getFullYear()} © All rights reserved.
           </WedsiteRights>
-          <SocialIcons>
+          <LogoCopyRight
+            href="https://www.flaticon.com/free-icons/profit"
+            title="profit icons"
+          >
+            Profit icons created by Freepik - Flaticon
+          </LogoCopyRight>
+          {/* <SocialIcons>
             <SocialIconLink
               href="//www.facebook.com"
               target="_blank"
@@ -61,9 +60,19 @@ const Footer = () => {
             <SocialIconLink href="/" target="_blank" aria-label="Twitter">
               <FaTwitter />
             </SocialIconLink>
-          </SocialIcons>
+          </SocialIcons> */}
         </SocialMediaWrap>
       </SocialMedia>
+      {/* <FooterWrap>
+        <FooterLinksWrapper>
+          <FooterLinkItems>
+            <FooterLinkTitle>상세 페이지 </FooterLinkTitle>
+            <FooterLink to="signin">센터장 소개</FooterLink>
+            <FooterLink to="signin">오시는 길</FooterLink>
+            <FooterLink to="signin">블로그(오픈예정)</FooterLink>
+          </FooterLinkItems>
+        </FooterLinksWrapper>
+      </FooterWrap> */}
     </FooterContainer>
   );
 };
